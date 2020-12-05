@@ -27,17 +27,11 @@
       </tags>
   </entry>
   <entry>
-    <title>처신 똑바로 하라고!</title>
-    <url>/2020/12/01/%EC%B2%98%EC%8B%A0-%EB%98%91%EB%B0%94%EB%A1%9C-%ED%95%98%EB%9D%BC%EA%B3%A0/</url>
-    <content><![CDATA[<!-- excerpt -->
-<p><img src="https://user-images.githubusercontent.com/42199367/100745639-efb3c300-3422-11eb-8cdd-1ecfc2653b3b.jpg" alt="처신짤"></p>
-<p><img src="https://user-images.githubusercontent.com/42199367/100745642-f17d8680-3422-11eb-8b37-822c4c592b73.gif" alt="KakaoTalk_20201201_162015667_01"></p>
-<p><img src="https://user-images.githubusercontent.com/42199367/100745654-f3dfe080-3422-11eb-9f60-cc133e5c4d61.gif" alt="KakaoTalk_20201201_162015667"></p>]]></content>
-  </entry>
-  <entry>
     <title>Hexo Controll</title>
     <url>/2020/12/05/hexoControl/</url>
     <content><![CDATA[<!-- excerpt -->
+
+<p><img src="https://user-images.githubusercontent.com/42199367/101241510-1d0db300-373a-11eb-932c-b8398189cde2.PNG" alt="Hexo"></p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
@@ -50,5 +44,13 @@
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+  </entry>
+  <entry>
+    <title>처신 똑바로 하라고!</title>
+    <url>/2020/12/01/%EC%B2%98%EC%8B%A0-%EB%98%91%EB%B0%94%EB%A1%9C-%ED%95%98%EB%9D%BC%EA%B3%A0/</url>
+    <content><![CDATA[<!-- excerpt -->
+<p><img src="https://user-images.githubusercontent.com/42199367/100745639-efb3c300-3422-11eb-8cdd-1ecfc2653b3b.jpg" alt="처신짤"></p>
+<p><img src="https://user-images.githubusercontent.com/42199367/100745642-f17d8680-3422-11eb-8b37-822c4c592b73.gif" alt="KakaoTalk_20201201_162015667_01"></p>
+<p><img src="https://user-images.githubusercontent.com/42199367/100745654-f3dfe080-3422-11eb-9f60-cc133e5c4d61.gif" alt="KakaoTalk_20201201_162015667"></p>]]></content>
   </entry>
 </search>
