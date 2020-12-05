@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>HEXO를 이용해 Theme 적용된 Git Blog 생성</title>
+    <url>/2020/12/02/CreateGitBlogWithHexo/</url>
+    <content><![CDATA[<!-- excerpt -->
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>GOORMIDE</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo_Front-Matter</title>
+    <url>/2020/12/05/Hexo-Front-Matter/</url>
+    <content><![CDATA[<!-- excerpt -->
+
+<h2 id="Front-Matter"><a href="#Front-Matter" class="headerlink" title="Front Matter"></a>Front Matter</h2><ul>
+<li><Strong>Tranquilpeak</Strong> 기준</li>
+<li>*.md 파일 내 Post 기본 설정</li>
+</ul>
+<br>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">title: title</span><br><span class="line">date: yyyy-MM-dd hh:mm:ss</span><br><span class="line">tags:</span><br><span class="line">	- <span class="string">&quot;tag1&quot;</span></span><br><span class="line">	- <span class="string">&quot;tag2&quot;</span></span><br><span class="line">category:</span><br><span class="line">	- category1</span><br><span class="line">keywords:	<span class="comment"># 검색엔진에서 사용될 키워드 지정</span></span><br><span class="line">	- <span class="string">&quot;keyword_1&quot;</span></span><br><span class="line">	- <span class="string">&quot;keyword_2&quot;</span></span><br><span class="line">clearReading: <span class="literal">true</span>	<span class="comment"># 게시물볼때 옆에 사이드바 치움</span></span><br><span class="line">thumbnailImage: image-1.png	<span class="comment"># 썸네일이미지 지정(`source/_post/게시물md파일이름/`폴더 안에 해당 이미지가 있어야함)</span></span><br><span class="line">thumbnailImagePosition: bottom	<span class="comment"># 썸네일이미지 위치지정</span></span><br><span class="line">autoThumbnailImage: yes	<span class="comment">#thumbnailImage로 썸네일이미지가 지정안되어있을경우 cover이미지나 게시물의 이미지를 이용하여 자동으로 썸네일 지정 </span></span><br><span class="line">metaAlignment: center	<span class="comment"># 게시물의 메타정보 정렬유형</span></span><br><span class="line">coverImage: image-2.png 	<span class="comment"># 커버이미지 지정(이것역시 썸네일이미지처럼 게시물폴더안에 이미지가있어야함)</span></span><br><span class="line">coverCaption: <span class="string">&quot;A beautiful sunrise&quot;</span>	<span class="comment"># 커버캡션 지정(따로 지정해놓지않으면 게시물제목으로 설정됨)</span></span><br><span class="line">coverMeta: out	<span class="comment"># 커버캡션을 cover이미지 안에 넣을건지 밖에 따로 놓을건지 설정</span></span><br><span class="line">coverSize: full	<span class="comment"># 커버이미지 사이즈</span></span><br><span class="line">gallery: <span class="comment"># </span></span><br><span class="line">	- <span class="string">&quot;image_1&quot;</span></span><br><span class="line">	- <span class="string">&quot;image_2&quot;</span></span><br><span class="line">comments: <span class="literal">false</span>	<span class="comment"># 댓글 </span></span><br><span class="line">meta: <span class="literal">false</span>	<span class="comment"># 메타</span></span><br><span class="line">actions: <span class="literal">false</span> </span><br></pre></td></tr></table></figure>]]></content>
+      <tags>
+        <tag>HEXO</tag>
+        <tag>Post</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>처신 똑바로 하라고!</title>
+    <url>/2020/12/01/%EC%B2%98%EC%8B%A0-%EB%98%91%EB%B0%94%EB%A1%9C-%ED%95%98%EB%9D%BC%EA%B3%A0/</url>
+    <content><![CDATA[<!-- excerpt -->
+<p><img src="https://user-images.githubusercontent.com/42199367/100745639-efb3c300-3422-11eb-8cdd-1ecfc2653b3b.jpg" alt="처신짤"></p>
+<p><img src="https://user-images.githubusercontent.com/42199367/100745642-f17d8680-3422-11eb-8b37-822c4c592b73.gif" alt="KakaoTalk_20201201_162015667_01"></p>
+<p><img src="https://user-images.githubusercontent.com/42199367/100745654-f3dfe080-3422-11eb-9f60-cc133e5c4d61.gif" alt="KakaoTalk_20201201_162015667"></p>]]></content>
+  </entry>
+  <entry>
+    <title>Hexo Controll</title>
+    <url>/2020/12/05/hexoControl/</url>
+    <content><![CDATA[<!-- excerpt -->
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server [default:4000]</span><br><span class="line">$ hexo server -p <span class="string">&#x27;PORT NUM&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+  </entry>
+</search>
