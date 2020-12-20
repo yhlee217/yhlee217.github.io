@@ -28,11 +28,38 @@
       </tags>
   </entry>
   <entry>
+    <title>About NPM</title>
+    <url>/2020/12/19/About-NPM/</url>
+    <content><![CDATA[<!-- excerpt -->
+
+<p><img src="https://user-images.githubusercontent.com/42199367/102707218-75b58200-42dc-11eb-92c8-afa46810e342.png" alt="image"></p>
+<h2 id="NPM-Node-Package-Manager-1"><a href="#NPM-Node-Package-Manager-1" class="headerlink" title="NPM(Node Package Manager)"></a><a href="https://www.npmjs.com/">NPM</a>(Node Package Manager)</h2><ul>
+<li><h4 id="공식-홈페이지-https-www-npmjs-com"><a href="#공식-홈페이지-https-www-npmjs-com" class="headerlink" title="공식 홈페이지 : https://www.npmjs.com/"></a>공식 홈페이지 : <a href="https://www.npmjs.com/">https://www.npmjs.com/</a></h4></li>
+<li><h4 id="원저자-Isaac-Z-Schlueter"><a href="#원저자-Isaac-Z-Schlueter" class="headerlink" title="원저자 : Isaac Z. Schlueter"></a>원저자 : Isaac Z. Schlueter</h4></li>
+<li><h4 id="개발자-Rebecca-Turner-Kat-Marchan-등"><a href="#개발자-Rebecca-Turner-Kat-Marchan-등" class="headerlink" title="개발자 : Rebecca Turner, Kat Marchan 등"></a>개발자 : Rebecca Turner, Kat Marchan 등</h4></li>
+<li><h4 id="발표일-2010년-1월"><a href="#발표일-2010년-1월" class="headerlink" title="발표일 : 2010년 1월"></a>발표일 : 2010년 1월</h4></li>
+<li><h4 id="Git-https-github-com-npm-cli"><a href="#Git-https-github-com-npm-cli" class="headerlink" title="Git : https://github.com/npm/cli"></a>Git : <a href="https://github.com/npm/cli">https://github.com/npm/cli</a></h4></li>
+<li><p>명령 줄 클라이언트(npm), 그리고 공개 패키지와 지불 방식의 개인 패키지의 온라인 데이터베이스(npm 레지스트리)로 이루어져 있다.</p>
+</li>
+<li><p>레지스트리는 클라이언트를 통해 접근되며 사용 가능한 패키지들은 npm 웹사이트를 통해 찾아보고 검색할 수 있다. 패키지 관리자와 레지스트리는 npm사에 의해 관리된다.</p>
+</li>
+<li><h4 id="비슷한-개념"><a href="#비슷한-개념" class="headerlink" title="비슷한 개념"></a>비슷한 개념</h4></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Ruby - Gem</span><br><span class="line">PHP - Composer</span><br><span class="line">C<span class="comment"># - NuGet</span></span><br><span class="line">Java - JPM</span><br><span class="line">Python - Pip</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Hexo Blog &#x27;package.json&#x27;</span></span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;name&quot;</span>: <span class="string">&quot;hexo-site&quot;</span>,</span><br><span class="line">  <span class="string">&quot;version&quot;</span>: <span class="string">&quot;0.0.0&quot;</span>,</span><br><span class="line">  <span class="string">&quot;private&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="string">&quot;scripts&quot;</span>: &#123;</span><br><span class="line">    <span class="string">&quot;build&quot;</span>: <span class="string">&quot;hexo generate&quot;</span>,</span><br><span class="line">    <span class="string">&quot;clean&quot;</span>: <span class="string">&quot;hexo clean&quot;</span>,</span><br><span class="line">    <span class="string">&quot;deploy&quot;</span>: <span class="string">&quot;hexo deploy&quot;</span>,</span><br><span class="line">    <span class="string">&quot;server&quot;</span>: <span class="string">&quot;hexo server&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="string">&quot;hexo&quot;</span>: &#123;</span><br><span class="line">    <span class="string">&quot;version&quot;</span>: <span class="string">&quot;5.2.0&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="string">&quot;dependencies&quot;</span>: &#123;</span><br><span class="line">    <span class="string">&quot;hexo&quot;</span>: <span class="string">&quot;^5.0.0&quot;</span>,</span><br><span class="line">    <span class="string">&quot;hexo-deployer-git&quot;</span>: <span class="string">&quot;^2.1.0&quot;</span>,</span><br><span class="line">    <span class="string">&quot;hexo-generator-archive&quot;</span>: <span class="string">&quot;^1.0.0&quot;</span>,</span><br><span class="line">    <span class="string">&quot;hexo-generator-category&quot;</span>: <span class="string">&quot;^1.0.0&quot;</span>,</span><br><span class="line">    <span class="string">&quot;hexo-generator-index&quot;</span>: <span class="string">&quot;^2.0.0&quot;</span>,</span><br><span class="line">    <span class="string">&quot;hexo-generator-searchdb&quot;</span>: <span class="string">&quot;^1.3.3&quot;</span>,</span><br><span class="line">    <span class="string">&quot;hexo-generator-tag&quot;</span>: <span class="string">&quot;^1.0.0&quot;</span>,</span><br><span class="line">    <span class="string">&quot;hexo-renderer-ejs&quot;</span>: <span class="string">&quot;^1.0.0&quot;</span>,</span><br><span class="line">    <span class="string">&quot;hexo-renderer-marked&quot;</span>: <span class="string">&quot;^3.0.0&quot;</span>,</span><br><span class="line">    <span class="string">&quot;hexo-renderer-stylus&quot;</span>: <span class="string">&quot;^2.0.0&quot;</span>,</span><br><span class="line">    <span class="string">&quot;hexo-server&quot;</span>: <span class="string">&quot;^2.0.0&quot;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+      <tags>
+        <tag>NPM</tag>
+        <tag>Blog</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HEXO를 이용해 Theme 적용된 Git Blog 생성</title>
     <url>/2020/12/02/CreateGitBlogWithHexo/</url>
     <content><![CDATA[<!-- excerpt -->
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
       <tags>
+        <tag>Blog</tag>
         <tag>Hexo</tag>
         <tag>GOORMIDE</tag>
       </tags>
@@ -49,8 +76,8 @@
 <br>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">title: title</span><br><span class="line">date: yyyy-MM-dd hh:mm:ss</span><br><span class="line">tags:</span><br><span class="line">	- <span class="string">&quot;tag1&quot;</span></span><br><span class="line">	- <span class="string">&quot;tag2&quot;</span></span><br><span class="line">category:</span><br><span class="line">	- category1</span><br><span class="line">keywords:	<span class="comment"># 검색엔진에서 사용될 키워드 지정</span></span><br><span class="line">	- <span class="string">&quot;keyword_1&quot;</span></span><br><span class="line">	- <span class="string">&quot;keyword_2&quot;</span></span><br><span class="line">clearReading: <span class="literal">true</span>	<span class="comment"># 게시물볼때 옆에 사이드바 치움</span></span><br><span class="line">thumbnailImage: image-1.png	<span class="comment"># 썸네일이미지 지정(`source/_post/게시물md파일이름/`폴더 안에 해당 이미지가 있어야함)</span></span><br><span class="line">thumbnailImagePosition: bottom	<span class="comment"># 썸네일이미지 위치지정</span></span><br><span class="line">autoThumbnailImage: yes	<span class="comment">#thumbnailImage로 썸네일이미지가 지정안되어있을경우 cover이미지나 게시물의 이미지를 이용하여 자동으로 썸네일 지정 </span></span><br><span class="line">metaAlignment: center	<span class="comment"># 게시물의 메타정보 정렬유형</span></span><br><span class="line">coverImage: image-2.png 	<span class="comment"># 커버이미지 지정(이것역시 썸네일이미지처럼 게시물폴더안에 이미지가있어야함)</span></span><br><span class="line">coverCaption: <span class="string">&quot;A beautiful sunrise&quot;</span>	<span class="comment"># 커버캡션 지정(따로 지정해놓지않으면 게시물제목으로 설정됨)</span></span><br><span class="line">coverMeta: out	<span class="comment"># 커버캡션을 cover이미지 안에 넣을건지 밖에 따로 놓을건지 설정</span></span><br><span class="line">coverSize: full	<span class="comment"># 커버이미지 사이즈</span></span><br><span class="line">gallery: <span class="comment"># </span></span><br><span class="line">	- <span class="string">&quot;image_1&quot;</span></span><br><span class="line">	- <span class="string">&quot;image_2&quot;</span></span><br><span class="line">comments: <span class="literal">false</span>	<span class="comment"># 댓글 </span></span><br><span class="line">meta: <span class="literal">false</span>	<span class="comment"># 메타</span></span><br><span class="line">actions: <span class="literal">false</span> </span><br></pre></td></tr></table></figure>]]></content>
       <tags>
+        <tag>Blog</tag>
         <tag>HEXO</tag>
-        <tag>Post</tag>
       </tags>
   </entry>
   <entry>
