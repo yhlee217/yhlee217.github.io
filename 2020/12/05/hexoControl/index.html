@@ -11,7 +11,7 @@
     
     
     
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ian lee","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://www.linkedin.com/profile/","mailto"],"image":"image.jpg"},"articleBody":"\n\n\nQuick StartCreate a new post1$ hexo new &quot;My New Post&quot;\n\nMore info: Writing\nRun server12$ hexo server [default:4000]$ hexo server -p &#x27;PORT NUM&#x27;\n\nMore info: Server\nGenerate static files1$ hexo generate\n\nMore info: Generating\nDeploy to remote sites1$ hexo deploy\n\nMore info: Deployment","dateCreated":"2020-12-05T11:59:41+00:00","dateModified":"2020-12-05T11:59:41+00:00","datePublished":"2020-12-05T11:59:41+00:00","description":"\nWelcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.","headline":"Hexo Controll","image":["Hexo.PNG"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://yhlee217.github.io/2020/12/05/hexoControl/"},"publisher":{"@type":"Organization","name":"Ian lee","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://www.linkedin.com/profile/","mailto"],"image":"image.jpg","logo":{"@type":"ImageObject","url":"image.jpg"}},"url":"https://yhlee217.github.io/2020/12/05/hexoControl/","thumbnailUrl":"Hexo.PNG"}</script>
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ian lee","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/"],"image":"image.jpg"},"articleBody":"\n\n\nQuick StartCreate a new post1$ hexo new &quot;My New Post&quot;\n\nMore info: Writing\nRun server12$ hexo server [default:4000]$ hexo server -p &#x27;PORT NUM&#x27;\n\nMore info: Server\nGenerate static files1$ hexo generate\n\nMore info: Generating\nDeploy to remote sites1$ hexo deploy\n\nMore info: Deployment","dateCreated":"2020-12-05T11:59:41+00:00","dateModified":"2020-12-05T11:59:41+00:00","datePublished":"2020-12-05T11:59:41+00:00","description":"\nWelcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.","headline":"Hexo Controll","image":["Hexo.PNG"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://yhlee217.github.io/2020/12/05/hexoControl/"},"publisher":{"@type":"Organization","name":"Ian lee","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/"],"image":"image.jpg","logo":{"@type":"ImageObject","url":"image.jpg"}},"url":"https://yhlee217.github.io/2020/12/05/hexoControl/","thumbnailUrl":"Hexo.PNG"}</script>
     <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
 <meta property="og:type" content="blog">
 <meta property="og:title" content="Hexo Controll">
@@ -175,20 +175,6 @@
                 <li class="sidebar-button">
                     
                         <a
-                            class="sidebar-button-link open-algolia-search"
-                            href="#search"
-                            
-                            rel="noopener"
-                            title="Search"
-                        >
-                        <i class="sidebar-button-icon fa fa-search" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Search</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a
                             class="sidebar-button-link "
                             href="#about"
                             
@@ -265,36 +251,6 @@
                         >
                         <i class="sidebar-button-icon fab fa-facebook" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">Facebook</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link "
-                            href="https://www.linkedin.com/profile/"
-                            
-                                target="_blank"
-                            
-                            rel="noopener"
-                            title="LinkedIn"
-                        >
-                        <i class="sidebar-button-icon fab fa-linkedin" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">LinkedIn</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link "
-                            href="/mailto"
-                            
-                            rel="noopener"
-                            title="Mail"
-                        >
-                        <i class="sidebar-button-icon fa fa-envelope" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Mail</span>
                     </a>
             </li>
             
@@ -628,6 +584,268 @@
             </div>
         
         
+    </div>
+</div>
+
+        
+            <div id="algolia-search-modal" class="modal-container">
+    <div class="modal">
+        <div class="modal-header">
+            <span class="close-button"><i class="fa fa-times"></i></span>
+            <a href="https://algolia.com" target="_blank" rel="noopener" class="searchby-algolia text-color-light link-unstyled">
+                <span class="searchby-algolia-text text-color-light text-small">by</span>
+                <img class="searchby-algolia-logo" src="/assets/images/logo-algolia-nebula-blue-full.svg">
+            </a>
+            <i class="search-icon fa fa-search"></i>
+            <form id="algolia-search-form">
+                <input type="text" id="algolia-search-input" name="search"
+                    class="form-control input--large search-input" placeholder="Search "
+                    />
+            </form>
+        </div>
+        <div class="modal-body">
+            <div class="no-result text-color-light text-center">no post found</div>
+            <div class="results">
+                
+                <div class="media">
+                    
+                    <div class="media-left">
+                        <a
+                            class="link-unstyled"
+                            href="https://yhlee217.github.io/2020/12/01/%EC%B2%98%EC%8B%A0-%EB%98%91%EB%B0%94%EB%A1%9C-%ED%95%98%EB%9D%BC%EA%B3%A0/"
+                            aria-label=": 처신 똑바로 하라고!"
+                        >
+                            <img class="media-image" src="https://image.fmkorea.com/files/attach/new/20201027/486616/250250968/3167779670/0a39ce37b71d72c8442c8863fe476654.png" width="90" height="90"/>
+                        </a>
+                    </div>
+                    
+                    <div class="media-body">
+                        <a
+                            class="link-unstyled"
+                            href="https://yhlee217.github.io/2020/12/01/%EC%B2%98%EC%8B%A0-%EB%98%91%EB%B0%94%EB%A1%9C-%ED%95%98%EB%9D%BC%EA%B3%A0/"
+                            aria-label=": 처신 똑바로 하라고!"
+                        >
+                            <h3 class="media-heading">처신 똑바로 하라고!</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Dec 1, 2020
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"><a id="more"></a>
+<p>처신 잘하네</p></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a
+                            class="link-unstyled"
+                            href="https://yhlee217.github.io/2020/12/02/CreateGitBlogWithHexo/"
+                            aria-label=": HEXO를 이용해 Theme 적용된 Git Blog 생성"
+                        >
+                            <h3 class="media-heading">HEXO를 이용해 Theme 적용된 Git Blog 생성</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Dec 2, 2020
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"><a id="more"></a>
+<p>HEXO, GOORM</p></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-left">
+                        <a
+                            class="link-unstyled"
+                            href="https://yhlee217.github.io/2020/12/05/Hexo-Front-Matter/"
+                            aria-label=": Hexo_Front-Matter"
+                        >
+                            <img class="media-image" src="https://yhlee217.github.io/2020/12/05/Hexo-Front-Matter/Twin.jpg" width="90" height="90"/>
+                        </a>
+                    </div>
+                    
+                    <div class="media-body">
+                        <a
+                            class="link-unstyled"
+                            href="https://yhlee217.github.io/2020/12/05/Hexo-Front-Matter/"
+                            aria-label=": Hexo_Front-Matter"
+                        >
+                            <h3 class="media-heading">Hexo_Front-Matter</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Dec 5, 2020
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"><a id="more"></a>
+<p>Tranquilpeak - Front Matter</p></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-left">
+                        <a
+                            class="link-unstyled"
+                            href="https://yhlee217.github.io/2020/12/05/hexoControl/"
+                            aria-label=": Hexo Controll"
+                        >
+                            <img class="media-image" src="https://yhlee217.github.io/2020/12/05/hexoControl/Hexo.PNG" width="90" height="90"/>
+                        </a>
+                    </div>
+                    
+                    <div class="media-body">
+                        <a
+                            class="link-unstyled"
+                            href="https://yhlee217.github.io/2020/12/05/hexoControl/"
+                            aria-label=": Hexo Controll"
+                        >
+                            <h3 class="media-heading">Hexo Controll</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Dec 5, 2020
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"><a id="more"></a>
+<p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-left">
+                        <a
+                            class="link-unstyled"
+                            href="https://yhlee217.github.io/2020/12/10/20201210-Python-Excel/"
+                            aria-label=": 20201210_Python&amp;Excel"
+                        >
+                            <img class="media-image" src="https://www.fusionmanageit.co.uk/wp-content/uploads/2017/10/microsoft-excel.jpg" width="90" height="90"/>
+                        </a>
+                    </div>
+                    
+                    <div class="media-body">
+                        <a
+                            class="link-unstyled"
+                            href="https://yhlee217.github.io/2020/12/10/20201210-Python-Excel/"
+                            aria-label=": 20201210_Python&amp;Excel"
+                        >
+                            <h3 class="media-heading">20201210_Python&amp;Excel</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Dec 10, 2020
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"><a id="more"></a>
+
+
+<p>Python &amp; Excel Basic</p>
+<ol>
+<li>create_file.py</li>
+</ol></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-left">
+                        <a
+                            class="link-unstyled"
+                            href="https://yhlee217.github.io/2020/12/19/About-NPM/"
+                            aria-label=": About NPM"
+                        >
+                            <img class="media-image" src="https://cdn.auth0.com/blog/nodenpm/logo.png" width="90" height="90"/>
+                        </a>
+                    </div>
+                    
+                    <div class="media-body">
+                        <a
+                            class="link-unstyled"
+                            href="https://yhlee217.github.io/2020/12/19/About-NPM/"
+                            aria-label=": About NPM"
+                        >
+                            <h3 class="media-heading">About NPM</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Dec 19, 2020
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"><a id="more"></a>
+<ul>
+<li><h5 id="NPM-Node-Package-Manager"><a href="#NPM-Node-Package-Manager" class="headerlink" title="NPM (Node Package Manager)"></a>NPM (Node Package Manager)</h5></li>
+<li><h5 id="자바스크립트-프로그래밍-언어를-위한-패키지-관리자"><a href="#자바스크립트-프로그래밍-언어를-위한-패키지-관리자" class="headerlink" title="자바스크립트 프로그래밍 언어를 위한 패키지 관리자"></a>자바스크립트 프로그래밍 언어를 위한 패키지 관리자</h5></li>
+<li><h5 id="자바스크립트-런타임-환경-Node-js의-기본-패키지-관리자"><a href="#자바스크립트-런타임-환경-Node-js의-기본-패키지-관리자" class="headerlink" title="자바스크립트 런타임 환경 Node.js의 기본 패키지 관리자"></a>자바스크립트 런타임 환경 Node.js의 기본 패키지 관리자</h5></li>
+</ul></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a
+                            class="link-unstyled"
+                            href="https://yhlee217.github.io/2020/12/22/Markdown/"
+                            aria-label=": Markdown"
+                        >
+                            <h3 class="media-heading">Markdown</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Dec 22, 2020
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"><a id="more"></a>
+<ul>
+<li>Markdown Basic Grammar</li>
+</ul></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+            </div>
+        </div>
+        <div class="modal-footer">
+            <p class="results-count text-medium"
+                data-message-zero="no post found"
+                data-message-one="1 post found"
+                data-message-other="{n} posts found">
+                7 posts found
+            </p>
+        </div>
     </div>
 </div>
 

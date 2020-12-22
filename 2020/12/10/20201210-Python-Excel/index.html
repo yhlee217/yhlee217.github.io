@@ -11,7 +11,7 @@
     
     
     
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ian lee","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://www.linkedin.com/profile/","mailto"],"image":"image.jpg"},"articleBody":"\n\nPython &amp; Excel Basic\ncreate_file.py\nsheet.py\ncell.py\nopen_file.py\ncell_range.py\n\n1 create_file.py1234567from openpyxl import Workbookwb = Workbook() #새 워크북 생성ws = wb.active # 현재 활성화된 Sheet 가져옴ws.title = &quot;TestWS&quot; # sheet 의 이름을 변경wb.save(&quot;Sample.xlsx&quot;)wb.close\n\n\n2. sheet.py1234567891011121314151617181920from openpyxl import Workbookwb = Workbook() # 새 워크북 생성ws = wb.create_sheet() # 새로운 Sheet를 기본 이름으로 생성ws.sheet_properties.tabColor = &quot;ff66ff&quot; # RGB 형태로 값을 넣어주면 해당 시트의 색상을 변경#Sheet, MySheet, YourSheetws1 = wb.create_sheet(&quot;YourSheet&quot;) # 주어진 이름으로 Sheet 생성ws2 = wb.create_sheet(&quot;NewSheet&quot;, 2) # 2번 째 Index에 Sheet 생성new_ws = wb[&quot;NewSheet&quot;]  # Dictionary 형태로 Sheet에 접근print(wb.sheetnames) # 모든 Sheet 이름 출력#Sheet 복사new_ws[&quot;A1&quot;] = &quot;Test&quot;   # &quot;A1&quot;에 &quot;Test 작성&quot;target = wb.copy_worksheet(new_ws)target.title = &quot;Copied Sheet&quot;wb.save(&quot;Sample.xlsx&quot;)\n\n3. cell.py12345678910111213141516171819202122232425262728293031323334from openpyxl import Workbookwb = Workbook()ws = wb.activews.title = &quot;TestSheet&quot;#A1 셀에 1이라는 값을 입력ws[&quot;A1&quot;] = 1ws[&quot;A2&quot;] = 2ws[&quot;A3&quot;] = 3ws[&quot;B1&quot;] = 4ws[&quot;B2&quot;] = 5ws[&quot;B3&quot;] = 6print(ws[&quot;A1&quot;]) # A1 Cell의 &#x27;정보&#x27;를 출력print(ws[&quot;A1&quot;].value) # A1 Cell의 &#x27;값&#x27;을 출력print(ws[&quot;A10&quot;].value) # 값이 없을 때는 &#x27;None&#x27;을 출력print(ws.cell(1, 1).value) # ws.cell(row, column).valuec = ws.cell(3, 1, 10) # ws[&quot;C1&quot;].value = 10print(c.value) #ws[&quot;C1&quot;]from random import *#반복문을 이용해 랜덤 숫자 채우기index = 0for x in range(1, 11): # 10개 row    for y in range(1, 11): # 10개 Column        #ws.cell(x, y, randint(0, 100)) # 0 ~ 100 사이의 숫자        ws.cell(x, y, index) # 순서대로 기입        index += 1wb.save(&quot;Sample.xlsx&quot;)\n\n4. open_file.py1234567891011121314151617from openpyxl import load_workbook # 파일 불러오기wb = load_workbook(&quot;Sample.xlsx&quot;) # sample.xlsx 파일에서 wb를 불러옴ws = wb.active # 활성화된 Sheet#cell 데이터 불러오기for x in range(1, 11):    for y in range(1, 11):        print(ws.cell(row=x, column=y).value, end=&quot; &quot;) # 1 2 3 4 ..    print()#cell 갯수를 모를 때for x in range(1, ws.max_row + 1):    for y in range(1, ws.max_column + 1):        print(ws.cell(row=x, column=y).value, end=&quot; &quot;)    print()\n\n5. cell_range.py12345678910from openpyxl import Workbookfrom random import *wb = Workbook()ws = wb.activews.append([&quot;번호&quot;, &quot;영어&quot;, &quot;수학&quot;]) #Listfor i in range(1, 11): # 10개 데이터 넣기    ws.append([i, randint(70, 100), randint(70, 100)])wb.save(&quot;Sample.xlsx&quot;)","dateCreated":"2020-12-10T04:50:57+00:00","dateModified":"2020-12-10T15:30:39+00:00","datePublished":"2020-12-10T04:50:57+00:00","description":"\n\n\nPython &amp; Excel Basic\n\ncreate_file.py\n","headline":"20201210_Python&Excel","image":["https://www.fusionmanageit.co.uk/wp-content/uploads/2017/10/microsoft-excel.jpg"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://yhlee217.github.io/2020/12/10/20201210-Python-Excel/"},"publisher":{"@type":"Organization","name":"Ian lee","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://www.linkedin.com/profile/","mailto"],"image":"image.jpg","logo":{"@type":"ImageObject","url":"image.jpg"}},"url":"https://yhlee217.github.io/2020/12/10/20201210-Python-Excel/","keywords":"Python, Excel","thumbnailUrl":"https://www.fusionmanageit.co.uk/wp-content/uploads/2017/10/microsoft-excel.jpg"}</script>
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ian lee","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/"],"image":"image.jpg"},"articleBody":"\n\nPython &amp; Excel Basic\ncreate_file.py\nsheet.py\ncell.py\nopen_file.py\ncell_range.py\n\n1 create_file.py1234567from openpyxl import Workbookwb = Workbook() #새 워크북 생성ws = wb.active # 현재 활성화된 Sheet 가져옴ws.title = &quot;TestWS&quot; # sheet 의 이름을 변경wb.save(&quot;Sample.xlsx&quot;)wb.close\n\n\n2. sheet.py1234567891011121314151617181920from openpyxl import Workbookwb = Workbook() # 새 워크북 생성ws = wb.create_sheet() # 새로운 Sheet를 기본 이름으로 생성ws.sheet_properties.tabColor = &quot;ff66ff&quot; # RGB 형태로 값을 넣어주면 해당 시트의 색상을 변경#Sheet, MySheet, YourSheetws1 = wb.create_sheet(&quot;YourSheet&quot;) # 주어진 이름으로 Sheet 생성ws2 = wb.create_sheet(&quot;NewSheet&quot;, 2) # 2번 째 Index에 Sheet 생성new_ws = wb[&quot;NewSheet&quot;]  # Dictionary 형태로 Sheet에 접근print(wb.sheetnames) # 모든 Sheet 이름 출력#Sheet 복사new_ws[&quot;A1&quot;] = &quot;Test&quot;   # &quot;A1&quot;에 &quot;Test 작성&quot;target = wb.copy_worksheet(new_ws)target.title = &quot;Copied Sheet&quot;wb.save(&quot;Sample.xlsx&quot;)\n\n3. cell.py12345678910111213141516171819202122232425262728293031323334from openpyxl import Workbookwb = Workbook()ws = wb.activews.title = &quot;TestSheet&quot;#A1 셀에 1이라는 값을 입력ws[&quot;A1&quot;] = 1ws[&quot;A2&quot;] = 2ws[&quot;A3&quot;] = 3ws[&quot;B1&quot;] = 4ws[&quot;B2&quot;] = 5ws[&quot;B3&quot;] = 6print(ws[&quot;A1&quot;]) # A1 Cell의 &#x27;정보&#x27;를 출력print(ws[&quot;A1&quot;].value) # A1 Cell의 &#x27;값&#x27;을 출력print(ws[&quot;A10&quot;].value) # 값이 없을 때는 &#x27;None&#x27;을 출력print(ws.cell(1, 1).value) # ws.cell(row, column).valuec = ws.cell(3, 1, 10) # ws[&quot;C1&quot;].value = 10print(c.value) #ws[&quot;C1&quot;]from random import *#반복문을 이용해 랜덤 숫자 채우기index = 0for x in range(1, 11): # 10개 row    for y in range(1, 11): # 10개 Column        #ws.cell(x, y, randint(0, 100)) # 0 ~ 100 사이의 숫자        ws.cell(x, y, index) # 순서대로 기입        index += 1wb.save(&quot;Sample.xlsx&quot;)\n\n4. open_file.py1234567891011121314151617from openpyxl import load_workbook # 파일 불러오기wb = load_workbook(&quot;Sample.xlsx&quot;) # sample.xlsx 파일에서 wb를 불러옴ws = wb.active # 활성화된 Sheet#cell 데이터 불러오기for x in range(1, 11):    for y in range(1, 11):        print(ws.cell(row=x, column=y).value, end=&quot; &quot;) # 1 2 3 4 ..    print()#cell 갯수를 모를 때for x in range(1, ws.max_row + 1):    for y in range(1, ws.max_column + 1):        print(ws.cell(row=x, column=y).value, end=&quot; &quot;)    print()\n\n5. cell_range.py12345678910from openpyxl import Workbookfrom random import *wb = Workbook()ws = wb.activews.append([&quot;번호&quot;, &quot;영어&quot;, &quot;수학&quot;]) #Listfor i in range(1, 11): # 10개 데이터 넣기    ws.append([i, randint(70, 100), randint(70, 100)])wb.save(&quot;Sample.xlsx&quot;)","dateCreated":"2020-12-10T04:50:57+00:00","dateModified":"2020-12-10T15:30:39+00:00","datePublished":"2020-12-10T04:50:57+00:00","description":"\n\n\nPython &amp; Excel Basic\n\ncreate_file.py\n","headline":"20201210_Python&Excel","image":["https://www.fusionmanageit.co.uk/wp-content/uploads/2017/10/microsoft-excel.jpg"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://yhlee217.github.io/2020/12/10/20201210-Python-Excel/"},"publisher":{"@type":"Organization","name":"Ian lee","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/"],"image":"image.jpg","logo":{"@type":"ImageObject","url":"image.jpg"}},"url":"https://yhlee217.github.io/2020/12/10/20201210-Python-Excel/","keywords":"Python, Excel","thumbnailUrl":"https://www.fusionmanageit.co.uk/wp-content/uploads/2017/10/microsoft-excel.jpg"}</script>
     <meta name="description" content="Python &amp; Excel Basic  create_file.py">
 <meta property="og:type" content="blog">
 <meta property="og:title" content="20201210_Python&amp;Excel">
@@ -175,20 +175,6 @@
                 <li class="sidebar-button">
                     
                         <a
-                            class="sidebar-button-link open-algolia-search"
-                            href="#search"
-                            
-                            rel="noopener"
-                            title="Search"
-                        >
-                        <i class="sidebar-button-icon fa fa-search" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Search</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a
                             class="sidebar-button-link "
                             href="#about"
                             
@@ -265,36 +251,6 @@
                         >
                         <i class="sidebar-button-icon fab fa-facebook" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">Facebook</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link "
-                            href="https://www.linkedin.com/profile/"
-                            
-                                target="_blank"
-                            
-                            rel="noopener"
-                            title="LinkedIn"
-                        >
-                        <i class="sidebar-button-icon fab fa-linkedin" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">LinkedIn</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link "
-                            href="/mailto"
-                            
-                            rel="noopener"
-                            title="Mail"
-                        >
-                        <i class="sidebar-button-icon fa fa-envelope" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Mail</span>
                     </a>
             </li>
             
@@ -639,6 +595,268 @@
             </div>
         
         
+    </div>
+</div>
+
+        
+            <div id="algolia-search-modal" class="modal-container">
+    <div class="modal">
+        <div class="modal-header">
+            <span class="close-button"><i class="fa fa-times"></i></span>
+            <a href="https://algolia.com" target="_blank" rel="noopener" class="searchby-algolia text-color-light link-unstyled">
+                <span class="searchby-algolia-text text-color-light text-small">by</span>
+                <img class="searchby-algolia-logo" src="/assets/images/logo-algolia-nebula-blue-full.svg">
+            </a>
+            <i class="search-icon fa fa-search"></i>
+            <form id="algolia-search-form">
+                <input type="text" id="algolia-search-input" name="search"
+                    class="form-control input--large search-input" placeholder="Search "
+                    />
+            </form>
+        </div>
+        <div class="modal-body">
+            <div class="no-result text-color-light text-center">no post found</div>
+            <div class="results">
+                
+                <div class="media">
+                    
+                    <div class="media-left">
+                        <a
+                            class="link-unstyled"
+                            href="https://yhlee217.github.io/2020/12/01/%EC%B2%98%EC%8B%A0-%EB%98%91%EB%B0%94%EB%A1%9C-%ED%95%98%EB%9D%BC%EA%B3%A0/"
+                            aria-label=": 처신 똑바로 하라고!"
+                        >
+                            <img class="media-image" src="https://image.fmkorea.com/files/attach/new/20201027/486616/250250968/3167779670/0a39ce37b71d72c8442c8863fe476654.png" width="90" height="90"/>
+                        </a>
+                    </div>
+                    
+                    <div class="media-body">
+                        <a
+                            class="link-unstyled"
+                            href="https://yhlee217.github.io/2020/12/01/%EC%B2%98%EC%8B%A0-%EB%98%91%EB%B0%94%EB%A1%9C-%ED%95%98%EB%9D%BC%EA%B3%A0/"
+                            aria-label=": 처신 똑바로 하라고!"
+                        >
+                            <h3 class="media-heading">처신 똑바로 하라고!</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Dec 1, 2020
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"><a id="more"></a>
+<p>처신 잘하네</p></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a
+                            class="link-unstyled"
+                            href="https://yhlee217.github.io/2020/12/02/CreateGitBlogWithHexo/"
+                            aria-label=": HEXO를 이용해 Theme 적용된 Git Blog 생성"
+                        >
+                            <h3 class="media-heading">HEXO를 이용해 Theme 적용된 Git Blog 생성</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Dec 2, 2020
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"><a id="more"></a>
+<p>HEXO, GOORM</p></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-left">
+                        <a
+                            class="link-unstyled"
+                            href="https://yhlee217.github.io/2020/12/05/Hexo-Front-Matter/"
+                            aria-label=": Hexo_Front-Matter"
+                        >
+                            <img class="media-image" src="https://yhlee217.github.io/2020/12/05/Hexo-Front-Matter/Twin.jpg" width="90" height="90"/>
+                        </a>
+                    </div>
+                    
+                    <div class="media-body">
+                        <a
+                            class="link-unstyled"
+                            href="https://yhlee217.github.io/2020/12/05/Hexo-Front-Matter/"
+                            aria-label=": Hexo_Front-Matter"
+                        >
+                            <h3 class="media-heading">Hexo_Front-Matter</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Dec 5, 2020
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"><a id="more"></a>
+<p>Tranquilpeak - Front Matter</p></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-left">
+                        <a
+                            class="link-unstyled"
+                            href="https://yhlee217.github.io/2020/12/05/hexoControl/"
+                            aria-label=": Hexo Controll"
+                        >
+                            <img class="media-image" src="https://yhlee217.github.io/2020/12/05/hexoControl/Hexo.PNG" width="90" height="90"/>
+                        </a>
+                    </div>
+                    
+                    <div class="media-body">
+                        <a
+                            class="link-unstyled"
+                            href="https://yhlee217.github.io/2020/12/05/hexoControl/"
+                            aria-label=": Hexo Controll"
+                        >
+                            <h3 class="media-heading">Hexo Controll</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Dec 5, 2020
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"><a id="more"></a>
+<p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-left">
+                        <a
+                            class="link-unstyled"
+                            href="https://yhlee217.github.io/2020/12/10/20201210-Python-Excel/"
+                            aria-label=": 20201210_Python&amp;Excel"
+                        >
+                            <img class="media-image" src="https://www.fusionmanageit.co.uk/wp-content/uploads/2017/10/microsoft-excel.jpg" width="90" height="90"/>
+                        </a>
+                    </div>
+                    
+                    <div class="media-body">
+                        <a
+                            class="link-unstyled"
+                            href="https://yhlee217.github.io/2020/12/10/20201210-Python-Excel/"
+                            aria-label=": 20201210_Python&amp;Excel"
+                        >
+                            <h3 class="media-heading">20201210_Python&amp;Excel</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Dec 10, 2020
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"><a id="more"></a>
+
+
+<p>Python &amp; Excel Basic</p>
+<ol>
+<li>create_file.py</li>
+</ol></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-left">
+                        <a
+                            class="link-unstyled"
+                            href="https://yhlee217.github.io/2020/12/19/About-NPM/"
+                            aria-label=": About NPM"
+                        >
+                            <img class="media-image" src="https://cdn.auth0.com/blog/nodenpm/logo.png" width="90" height="90"/>
+                        </a>
+                    </div>
+                    
+                    <div class="media-body">
+                        <a
+                            class="link-unstyled"
+                            href="https://yhlee217.github.io/2020/12/19/About-NPM/"
+                            aria-label=": About NPM"
+                        >
+                            <h3 class="media-heading">About NPM</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Dec 19, 2020
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"><a id="more"></a>
+<ul>
+<li><h5 id="NPM-Node-Package-Manager"><a href="#NPM-Node-Package-Manager" class="headerlink" title="NPM (Node Package Manager)"></a>NPM (Node Package Manager)</h5></li>
+<li><h5 id="자바스크립트-프로그래밍-언어를-위한-패키지-관리자"><a href="#자바스크립트-프로그래밍-언어를-위한-패키지-관리자" class="headerlink" title="자바스크립트 프로그래밍 언어를 위한 패키지 관리자"></a>자바스크립트 프로그래밍 언어를 위한 패키지 관리자</h5></li>
+<li><h5 id="자바스크립트-런타임-환경-Node-js의-기본-패키지-관리자"><a href="#자바스크립트-런타임-환경-Node-js의-기본-패키지-관리자" class="headerlink" title="자바스크립트 런타임 환경 Node.js의 기본 패키지 관리자"></a>자바스크립트 런타임 환경 Node.js의 기본 패키지 관리자</h5></li>
+</ul></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a
+                            class="link-unstyled"
+                            href="https://yhlee217.github.io/2020/12/22/Markdown/"
+                            aria-label=": Markdown"
+                        >
+                            <h3 class="media-heading">Markdown</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Dec 22, 2020
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"><a id="more"></a>
+<ul>
+<li>Markdown Basic Grammar</li>
+</ul></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+            </div>
+        </div>
+        <div class="modal-footer">
+            <p class="results-count text-medium"
+                data-message-zero="no post found"
+                data-message-one="1 post found"
+                data-message-other="{n} posts found">
+                7 posts found
+            </p>
+        </div>
     </div>
 </div>
 
