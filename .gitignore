@@ -1,0 +1,10 @@
+node_modules/
+public/
+.deploy_git/
+db.json
+*.log
+.DS_Store
+
+# 테마(themes/tranquilpeak)는 빌드된 에셋과 함께 저장소에 포함합니다.
+# 테마의 빌드 도구(node_modules)만 제외합니다.
+themes/*/node_modules/

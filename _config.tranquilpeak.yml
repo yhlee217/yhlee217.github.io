@@ -1,0 +1,54 @@
+# Tranquilpeak 테마 사용자 설정 (themes/tranquilpeak/_config.yml 위에 병합됨)
+# 사이드바 메뉴/소셜 링크는 themes/tranquilpeak/_config.yml 에서 직접 관리합니다.
+# Docs: https://louisbarranqueiro.github.io/hexo-theme-tranquilpeak/
+
+image_dir: assets/images
+
+# ------
+# Author / 사이드바 프로필
+# ------
+author:
+  email: yhlee940217@gmail.com
+  location:
+  picture:
+  twitter:
+
+# -------------
+# 화면 / 표시 설정
+# -------------
+sidebar_behavior: 1
+clear_reading: true
+thumbnail_image: true
+thumbnail_image_position: right
+auto_thumbnail_image: true
+cover_image: cover.jpg
+favicon:
+image_gallery: true
+archive_pagination: true
+category_pagination: true
+tag_pagination: true
+
+# ---------------
+# 댓글 / 검색 (필요 시 활성화)
+# ---------------
+disqus_shortname:
+gitment:
+  enable: false
+gitalk:
+  enable: false
+algolia_search:
+  enable: false
+insight_search:
+  enable: false
+
+# ---------------
+# SEO / 분석 (필요 시 채우기)
+# ---------------
+google_analytics:
+google_site_verification:
+google_structured_data: true
+
+# 공유 버튼 / 플로팅 버튼
+sharing: true
+fab_button:
+  enable: true
