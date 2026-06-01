@@ -100,6 +100,17 @@ feed:
   hub:
   content:
 
+# 글 비밀번호 잠금 (hexo-blog-encrypt)
+## 글의 front-matter 에 `password: 비밀번호` 를 넣으면 그 글만 암호화됩니다.
+## 아래는 잠긴 글에 표시될 기본 문구입니다.
+encrypt:
+  abstract: 이 글은 비밀번호로 보호되어 있습니다.
+  message: 비밀번호를 입력하세요.
+  wrong_pass_message: 비밀번호가 올바르지 않습니다.
+  silent: false
+  kdf:
+    iterations: 600000
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment.html
 deploy:
