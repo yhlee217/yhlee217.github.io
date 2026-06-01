@@ -43,6 +43,30 @@ categories:
 > URL은 `_config.yml` 의 `permalink: :year/:month/:day/:title/` 규칙을 따르며,
 > `:title` 은 **파일 이름**(slug)에서 만들어집니다.
 
+## 🔒 비밀번호로 잠그는 글 (hexo-blog-encrypt)
+
+특정 글을 **비밀번호를 입력해야 볼 수 있게** 만들 수 있습니다.
+글의 front-matter 에 `password` 한 줄만 추가하면 됩니다.
+
+```markdown
+---
+title: "잠긴 글"
+date: 2026-06-01 12:00:00
+password: 원하는_비밀번호
+abstract: 이 글은 비밀번호로 보호되어 있습니다.   # (선택) 잠금 화면 안내문
+message: 비밀번호를 입력하세요.                  # (선택) 입력창 위 문구
+---
+
+본문은 비밀번호를 입력해야 보입니다.
+```
+
+- 배포된 HTML에는 본문이 **암호화(AES)되어** 들어가므로, 비밀번호를 모르면 내용을 볼 수 없습니다.
+- 기본 안내 문구는 `_config.yml` 의 `encrypt:` 에서 바꿀 수 있습니다.
+- 예시 글: `source/_posts/secret-example.md` (비밀번호 `hello`) — 필요 없으면 삭제하세요.
+
+> 참고: 글을 **아예 사이트에 안 띄우려면** front-matter 에 `published: false` 를 넣거나
+> `source/_drafts/` 폴더에 두면 됩니다(빌드에서 제외됨).
+
 ## 🖥 로컬에서 미리보기 (선택)
 
 ```bash
