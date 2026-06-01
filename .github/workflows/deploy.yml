@@ -41,6 +41,11 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
+        with:
+          # Pages가 아직 켜져 있지 않으면 'GitHub Actions' 소스로 자동 활성화.
+          # (이미 '브랜치 배포' 모드로 켜져 있는 경우엔 자동 전환되지 않으므로,
+          #  최초 1회 Settings > Pages > Source 를 'GitHub Actions' 로 바꿔야 합니다.)
+          enablement: true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
